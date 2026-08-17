@@ -45,7 +45,7 @@
         /* Header */
         header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             padding: 30px 20px;
             background: rgba(0, 0, 0, 0.6);
             border-radius: 20px;
@@ -97,7 +97,7 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             flex-wrap: wrap;
         }
 
@@ -122,6 +122,48 @@
             background: linear-gradient(90deg, #ff1493, #9400d3);
             transform: scale(1.1);
             box-shadow: 0 0 30px rgba(255, 20, 147, 1);
+        }
+
+        /* BBS Announcement */
+        .bbs-announcement {
+            background: linear-gradient(90deg, rgba(255,20,147,0.12), rgba(148,0,211,0.08));
+            border: 3px solid #ff1493;
+            padding: 20px;
+            border-radius: 12px;
+            color: #fff;
+            margin-bottom: 25px;
+            box-shadow: 0 0 20px rgba(255,20,147,0.2);
+        }
+
+        .bbs-announcement h2 {
+            font-size: 22px;
+            color: #ffefc6;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .bbs-list {
+            list-style: none;
+            padding-left: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+        }
+
+        .bbs-list li {
+            background: rgba(0,0,0,0.4);
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid rgba(148,0,211,0.2);
+        }
+
+        .important-notes {
+            margin-top: 12px;
+            background: rgba(139,0,0,0.14);
+            padding: 12px;
+            border-radius: 8px;
+            border: 2px solid #8b0000;
+            color: #ffd6d6;
         }
 
         /* Products Grid */
@@ -410,6 +452,10 @@
             background: #9400d3;
         }
 
+        .cart-items::-webkit-scrollbar-thumb:hover {
+            background: #9400d3;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             h1 {
@@ -472,6 +518,30 @@
             <a href="#cart">🛒 CART</a>
             <a href="#footer">📞 CONTACT</a>
         </nav>
+
+        <!-- BBS Announcement (inserted per request) -->
+        <div class="bbs-announcement" id="bbsAnnouncement">
+            <h2>📢 𝐁𝐁𝐒 🎁 𝐒𝐇𝐎𝐏 𝐑𝐄𝐓𝐔𝐑𝐍𝐒 𝐖𝐈𝐓𝐇 𝐀 𝐁𝐀𝐍𝐆 📢</h2>
+            <ul class="bbs-list">
+                <li><strong>🎁 Shoulder Pets:</strong> 60𝐤 𝐁𝐁𝐒<br><small>Note: This doesn't include Noglins</small></li>
+                <li><strong>🎁 Small Breeding Pairs:</strong> 175𝐤 𝐁𝐁𝐒<br><small>Examples: Carbos, Raptors, Equuus, etc.</small></li>
+                <li><strong>🎁 Medium Breeding Pairs:</strong> 300𝐤 𝐁𝐁𝐒<br><small>Examples: Stego, Trikes, Thylas, Desmo, Pts, etc.</small></li>
+                <li><strong>🎁 Large Breeding Pairs:</strong> 500𝐤 𝐁𝐁𝐒<br><small>Examples: Manas, Wyverns, Carcha, Rex, Gigas, etc.</small></li>
+                <li><strong>🎁 Unbreedable Dinos:</strong> 250𝐤 𝐁𝐁𝐒<br><small>Examples: Golems, Basilisk, Reapers, Queen, etc.</small></li>
+                <li><strong>🎁 Dino Colours Per Pair:</strong> 25𝐤 𝐁𝐁𝐒</li>
+                <li><strong>🎁 dedi of adv 9:</strong> 150𝐤 𝐁𝐁𝐒</li>
+                <li><strong>🎁 dedi of shards 9:</strong> 150𝐤 𝐁𝐁𝐒</li>
+            </ul>
+            <div class="important-notes">
+                <strong>⚠️ Important notes ⚠️</strong>
+                <p style="margin-top:8px;">⚠️ The following will not be available to buy from Bbs Shop: ⚠️</p>
+                <ul>
+                    <li>~~❌ Private Renewals ❌~~</li>
+                    <li>~~❌ Blueprints ❌~~</li>
+                </ul>
+                <p style="margin-top:8px; font-weight:bold;">All tames will be spawned in wild at Level 900</p>
+            </div>
+        </div>
 
         <!-- Products Section -->
         <div id="products" class="products-grid">
